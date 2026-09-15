@@ -12,6 +12,32 @@
 
     <!-- This script tag bootstraps PyScript -->
     <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+
+<style>
+        body {
+            background-image: url("https://i.pinimg.com/736x/65/93/3f/65933f27ca828e58f62281a102eef9ea.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 40px;
+        }
+
+        input {
+            border: 2px solid #f3b6c6;
+        }
+
+        button {
+            background-color: #f3b6c6;
+
+        }
+
+        #result {
+            font-size: 30px;
+            font-style: bold;
+            color: #FA5A92;
+        }
+    </style>
+</head>
+
 </head>
 <body>
     
@@ -28,10 +54,22 @@
 
 <br>
 
-        <label for='firstnum'>First Number:</label>
-<input type='number' id='firstnum'>
-<label for='secondnum'>Second Number:</label>
-<input type='number' id='secondnum'>
+<label for='n1'>First Number:</label>
+<input type='number' id='n1'>
+<label for='n2'>Second Number:</label>
+<input type='number' id='n2'>
+
+<br><br>
+
+<button py-click="add">+</button>
+<button py-click="subtract">-</button>
+<button py-click="multiply">*</button>
+<button py-click="divide">/</button>
+
+<br><br>
+
+<div id="result"></div>
+
 
 
 </body>
